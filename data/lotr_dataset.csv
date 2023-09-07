@@ -1008,7 +1008,6 @@
 1006,EOWYN,Where is the rest?,The Two Towers ,TA 2995,FO,Female,Men
 1007,SOLDIER,"This is all we could save, my lady.",The Two Towers ,,,Other,Men
 1008,EOWYN,Take it to the caves.,The Two Towers ,TA 2995,FO,Female,Men
-1009,EOWYN,,The Two Towers ,TA 2995,FO,Female,Men
 1010,THEODEN,"Simbelmyne. Ever has it grown on the tombs of my forebearers.,Now it shall cover the grave of my son. Alas that these evil days should be mine. The young perish and the old linger. That I should live......to see the last days of my house.",The Two Towers ,,,Other,Men
 1011,GANDALF,Theodred's death was not of your making.,The Two Towers ,Before the the Shaping of Arda,"January 253019 ,Battle of the Peak immortal",Male,Maiar
 1012,THEODEN,No parent should have to bury their child.,The Two Towers ,,,Other,Men
@@ -1400,7 +1399,6 @@
 1398,FRODO,"Long ago, when there was a King.",The Return of the King ,,,Other,Hobbits
 1399,SAM,"Mr Frodo, look! The King has got a crown again.",The Return of the King ,,,Other,Hobbits
 1400,MERRY,What are they eating when they can't get hobbit ?,The Fellowship of the Ring ,,,Other,Hobbits
-1401,ARAGORN,,The Fellowship of the Ring ,,,Other,Men
 1402,FRODO,Who is she ? This woman you sing of ?,The Fellowship of the Ring ,,,Other,Hobbits
 1403,ARAGORN,Tis the Lady of L'thien. The Elf Maiden who gave her love to Beren ... a mortal,The Fellowship of the Ring ,,,Other,Men
 1404,FRODO,What happened to her?,The Fellowship of the Ring ,,,Other,Hobbits
@@ -1476,7 +1474,6 @@
 1474,THEODEN,"And gladly, I accept it. , You shall be Meriadoc, esquire of Rohan.",The Return of the King ,,,Other,Men
 1475,GIMLI,"Horse men! I wish I could muster an army of Dwarves, fully armed and filthy.",The Return of the King ,TA 2879,"Unknown (Departed to ,Aman ,FO 120,)",Male,Dwarves
 1476,LEGOLAS,Your kinsmen may have no need to ride to war. I fear war already marches on their own lands.,The Return of the King ,,"Still alive, departed to ,Aman ,FO 120",Male,Elves
-1477,THEODEN,,The Return of the King ,,,Other,Men
 1478,EOMER,"Now is the hour, Riders of Rohan. Oaths you have taken. Now fulfil them all, to Lord and Land! Hah!",The Return of the King ,TA 2990,FO 63,Male,Men
 1479,PIPPIN,Why are there so few of youwhen you have lived so long? Are there Ent children?,The Two Towers ,,,Other,Hobbits
 1480,TREEBEARD,Bru-ra-hroom.There have been no Entingsfor a terrible long count of years.,The Two Towers ,YT,,Male,Ents
@@ -1568,7 +1565,6 @@
 1566,ARAGORN,Haldir,The Fellowship of the Ring ,,,Other,Men
 1567,GIMLI,So much for the legendary courtesy of the Elves! Speak words we can also understand!,The Fellowship of the Ring ,TA 2879,"Unknown (Departed to ,Aman ,FO 120,)",Male,Dwarves
 1568,HALDIR,"We have not had dealings with the dwarves, since the dark days.",The Fellowship of the Ring ,,,Other,Elves
-1569,GIMLI,,The Fellowship of the Ring ,TA 2879,"Unknown (Departed to ,Aman ,FO 120,)",Male,Dwarves
 1570,ARAGORN,That! was not so courteous!,The Fellowship of the Ring ,,,Other,Men
 1571,HALDIR,"You bring great evil with you ,You can go no further!",The Fellowship of the Ring ,,,Other,Elves
 1572,ARAGORN,Boe ammen veriad l'n. Andelu i ven!,The Fellowship of the Ring ,,,Other,Men
@@ -1842,7 +1838,6 @@
 1840,GANDALF,Gwaihir go! Gwaihir,The Fellowship of the Ring ,Before the the Shaping of Arda,"January 253019 ,Battle of the Peak immortal",Male,Maiar
 1841,PIPPIN,What are they saying ?,The Fellowship of the Ring ,,,Other,Hobbits
 1842,ARWEN,"Frodo f'r. Ae athradon i hir, tur gwaith nin beriatha hon.",The Fellowship of the Ring ,TA 241,FO 121,Female,Elves
-1843,MERRY,,The Fellowship of the Ring ,,,Other,Hobbits
 1844,PIPPIN,",",The Fellowship of the Ring ,,,Other,Hobbits
 1845,GAFFER,"There's been some strange folk crossing the Shire. Dwarves, others of a less than savoury nature",The Fellowship of the Ring ,,,Other,Hobbits
 1846,NOAKES,"War's brewing. , The mountains are fair teeming with goblins.",The Fellowship of the Ring ,,,Other,Ents
@@ -2081,7 +2076,6 @@
 2079,GIMLI,This new Gandalf's more grumpythan the old one.,The Two Towers ,TA 2879,"Unknown (Departed to ,Aman ,FO 120,)",Male,Dwarves
 2080,LEGOLAS,That is one of the Mearas......unless my eyes are cheatedby some spell.,The Two Towers ,,"Still alive, departed to ,Aman ,FO 120",Male,Elves
 2081,GANDALF,Shadowfax.He is the lord of all horses......and has been my friendthrough many dangers.,The Two Towers ,Before the the Shaping of Arda,"January 253019 ,Battle of the Peak immortal",Male,Maiar
-2082,TREEBEARD,,The Two Towers ,YT,,Male,Ents
 2083,MERRY,ls it much further?,The Two Towers ,,,Other,Hobbits
 2084,TREEBEARD,"Bru-ra-hroom. Don't be hasty.You might call it far, perhaps.My home lies deep in the forest......near the roots of the mountain.I told Gandalf I would keep you safe.And safe is where I'll keep you.I believe you will enjoy this next one too. ,It's one of my own compositions.Right.",The Two Towers ,YT,,Male,Ents
 2085,TREEBEARD,"Sleep, little Shirelings.Heed no nightly noise.Sleep till morning light.I have business in the forest.There are many to call.Many that must come. ,The Shadow lies on Fangorn.The withering of all woodsis drawing near.",The Two Towers ,YT,,Male,Ents

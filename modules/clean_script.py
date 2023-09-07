@@ -152,7 +152,6 @@ def clean_script(script_df, char_df, out_path=None):
     #remove rows if dialog is empty
     lotr_df=lotr_df[lotr_df["dialog"]!=" "]
     lotr_df=lotr_df[lotr_df["dialog"]!=""]
-    lotr_df=lotr_df[lotr_df["dialog"].isfloat()==False]
 
     lotr_df=lotr_df.drop(columns=["Unnamed: 0", "name", "_merge", "spouse", "realm", "hair", "height"])
     lotr_df=lotr_df[["char", "dialog", "movie", "birth", "death", "gender", "race"]]
