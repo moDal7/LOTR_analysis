@@ -2,6 +2,7 @@ import torch
 from torch.utils.data import Dataset, DataLoader
 from transformers import DistilBertTokenizer
 import pandas as pd
+import sklearn
 
 MAX_LEN = 128
 TRAIN_BATCH_SIZE = 4
@@ -68,7 +69,7 @@ def label2race(label):
                   }
     return conversion[label]
 
-def load_data(data_path):
+def load_data(data_path, kfolds=5, test=False):
     tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-uncased', truncation=True, do_lower_case=True)
     train_size = 0.8
 
@@ -85,6 +86,7 @@ def load_data(data_path):
     print("TEST Dataset: {}".format(test_data.shape))
 
     training_set = MultiLabelDataset(train_data, tokenizer, MAX_LEN)
+    validation_set = MultiLabelDataset(train_data, tokenizer, MAX_LEN)
     testing_set = MultiLabelDataset(test_data, tokenizer, MAX_LEN)
     
     train_params = {'batch_size': TRAIN_BATCH_SIZE,
@@ -98,6 +100,9 @@ def load_data(data_path):
                     }
 
     training_loader = DataLoader(training_set, **train_params)
+    validation_loader = DataLoader(validation_set, **train_params)
     testing_loader = DataLoader(testing_set, **test_params)
-
-    return training_loader, testing_loader
+    if test:
+        return testing_loader
+    else:
+        return training_loader, validation_loader
