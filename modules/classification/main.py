@@ -1,4 +1,4 @@
-import parser
+from parser_custom import parse_arguments
 import os
 import logging
 from classification_training import Training
@@ -15,7 +15,7 @@ def main(opt):
 
 if __name__ == '__main__':
 
-    opt = parser.parse_arguments()
+    opt = parse_arguments()
 
     # Setup output directories
     os.makedirs(opt['output_path'], exist_ok=True)
