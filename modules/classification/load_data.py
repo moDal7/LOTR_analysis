@@ -69,25 +69,24 @@ def label2race(label):
                   }
     return conversion[label]
 
-def load_data(data_path, kfolds=5, test=False):
+def load_data(data_path, indexes):
     tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-uncased', truncation=True, do_lower_case=True)
-    train_size = 0.8
 
     data = pd.read_csv(data_path)
     new_df = pd.DataFrame()
     new_df = new_df['text'] = data['Dialog']
     new_df['labels'] = data['Race'].apply(race2label)
-    train_data=new_df.sample(frac=train_size, random_state=200)
-    test_data=new_df.drop(train_data.index).reset_index(drop=True)
-    train_data = train_data.reset_index(drop=True)
+
+    # generate train and test sets based on indexes
+    train_df = new_df.iloc[indexes[0]]
+    valid_df = new_df.iloc[indexes[1]]
 
     print("FULL Dataset: {}".format(new_df.shape))
-    print("TRAIN Dataset: {}".format(train_data.shape))
-    print("TEST Dataset: {}".format(test_data.shape))
+    print("TRAIN Dataset: {}".format(train_df.shape))
+    print("TEST Dataset: {}".format(valid_df.shape))
 
-    training_set = MultiLabelDataset(train_data, tokenizer, MAX_LEN)
-    validation_set = MultiLabelDataset(train_data, tokenizer, MAX_LEN)
-    testing_set = MultiLabelDataset(test_data, tokenizer, MAX_LEN)
+    training_set = MultiLabelDataset(train_df, tokenizer, MAX_LEN)
+    validation_set = MultiLabelDataset(train_df, tokenizer, MAX_LEN)
     
     train_params = {'batch_size': TRAIN_BATCH_SIZE,
                     'shuffle': True,
@@ -101,8 +100,5 @@ def load_data(data_path, kfolds=5, test=False):
 
     training_loader = DataLoader(training_set, **train_params)
     validation_loader = DataLoader(validation_set, **train_params)
-    testing_loader = DataLoader(testing_set, **test_params)
-    if test:
-        return testing_loader
-    else:
-        return training_loader, validation_loader
+   
+    return training_loader, validation_loader
